@@ -15,6 +15,8 @@
 }
 
 body {
+    position: relative;
+
     background-color: var(--background-color);
 }
 
@@ -38,20 +40,6 @@ body {
     src: url("/font/Heatwood.woff2") format("woff2"), url("/font/Heatwood.woff") format("woff");
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1.5em;
-}
-
-.spacing-horizontal {
-    margin: 0 1.5em;
-}
-
-.spacing-around {
-    margin: 1.5em;
-}
-
 h1, h2, h3, h4, h5, h6, p, li, a, button {
     color: var(--text-color);
     -webkit-font-smoothing: antialiased;
@@ -67,6 +55,20 @@ a {
 
 button {
     cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5em;
+}
+
+.spacing-horizontal {
+    margin: 0 1.5em
+}
+
+.spacing-around {
+    padding: 1.5em;
 }
 
 .text-light {
@@ -106,23 +108,30 @@ button {
     border: .5px solid var(--border-color);
 }
 
-#noise {
-    height: 100dvh;
-
-    position: fixed;
-    top:0;
+.noise {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
 
     mix-blend-mode: color-burn;
+    opacity: .75;
+
+    pointer-events: none; 
 }
 
-#noise img {
+.noise img {
     width: 100%;
+    height: 100%;
 }
 
 #nav {
-    width: calc(100% - 3em);
+    width: 100%;
 
     position: absolute;
+    z-index: 1000;
 }
 
 #nav a {
@@ -144,7 +153,9 @@ button {
 }
 
 #header {
-    height: calc(100dvh - 3em);
+    height: 100dvh;
+
+    position: relative;
 }
 
 #header h1 {
@@ -159,21 +170,23 @@ button {
     align-items: end;
 }
 
-#header div {
+#header div:nth-of-type(1) {
     grid-column-start: 9;
     grid-column-end: 11;
     display: flex;
     align-items: end;
 }
 
-#header div img {
+#header div:nth-of-type(1) img {
     width: 100%;
 
     border-radius: var(--border-radius);
 }
 
 #first-section {
-    height: calc(100dvh - 3em);
+    height: 100dvh;
+
+    position: relative;
 }
 
 #first-section h2 {
@@ -181,7 +194,7 @@ button {
     grid-column-end: 13;
 }
 
-#first-section div {
+#first-section div:nth-of-type(1) {
     grid-column-start: 8;
     grid-column-end: 13;
     display: flex;
@@ -190,12 +203,14 @@ button {
     justify-content: end;
 }
 
-#first-section div h3 {
+#first-section div:nth-of-type(1) h3 {
     margin-bottom: .5em;
 }
 
 #second-section {
-    height: calc(100dvh - 3em);
+    height: 100dvh;
+
+    position: relative;
 }
 
 #second-section h2 {
@@ -220,7 +235,9 @@ button {
 }
 
 #third-section {
-    height: calc(100dvh - 3em);
+    height: 100dvh;
+
+    position: relative;
 }
 
 #third-section h2 {
@@ -242,7 +259,7 @@ button {
     grid-column-end: 13;
 }
 
-#third-section div {
+#third-section div:nth-of-type(1) {
     grid-column-start: 5;
     grid-column-end: 13;
     display: flex;
@@ -250,8 +267,12 @@ button {
     align-items: center;
 }
 
-#third-section div img {
+#third-section div:nth-of-type(1) img {
     width: 50%;
+}
+
+#fourth-section {
+    position: relative;
 }
 
 #fourth-section h2 {
@@ -337,7 +358,7 @@ button {
 }
 
 #fifth-section {
-    height: calc(100dvh - 3em);
+    position: relative;
 }
 
 #fifth-section h2 {
@@ -373,8 +394,14 @@ button {
     border-radius: var(--border-radius);
 }
 
+#fifth-section article ul li:last-of-type {
+    margin-bottom: 0;
+}
+
 #sixth-section {
-    height: calc(100dvh - 6em);
+    height: 100dvh;
+
+    position: relative;
 }
 
 #sixth-section h2 {
@@ -382,20 +409,29 @@ button {
     grid-column-end: 13;
 }
 
-#sixth-section div {
+#sixth-section div:nth-of-type(1) {
     grid-column-start: 5;
     grid-column-end: 9;
 }
 
-#sixth-section div p:nth-of-type(1) {
+#sixth-section div:nth-of-type(1) p:nth-of-type(1) {
     text-align: justify;
 }
 
-#sixth-section div p:nth-of-type(2) {
+#sixth-section div:nth-of-type(1) p:nth-of-type(2) {
     margin-top: 1.5em;
 
     font-family: "Heatwood";
     font-size: 1.5em;
+
+    transform: rotate(-4deg);
+}
+
+#footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 #footer ul p {
@@ -405,7 +441,7 @@ button {
 
 #footer ul p span {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 #footer ul li:nth-of-type(1) {
