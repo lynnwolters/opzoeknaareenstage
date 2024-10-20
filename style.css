@@ -106,6 +106,19 @@ button {
     border: .5px solid var(--border-color);
 }
 
+#noise {
+    height: 100dvh;
+
+    position: fixed;
+    top:0;
+
+    mix-blend-mode: color-burn;
+}
+
+#noise img {
+    width: 100%;
+}
+
 #nav {
     width: calc(100% - 3em);
 
@@ -361,7 +374,7 @@ button {
 }
 
 #sixth-section {
-    height: calc(100dvh - 7.5em);
+    height: calc(100dvh - 6em);
 }
 
 #sixth-section h2 {
@@ -392,6 +405,7 @@ button {
 
 #footer ul p span {
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 #footer ul li:nth-of-type(1) {
