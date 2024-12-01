@@ -1,0 +1,17 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.spacing-around {
+    padding: var(--gap);
+}
+
+.arrow {
+    transition: all .25s ease-in-out;
+}
+
+.link:hover .arrow {
+    transform: translate(20%, -20%);
+}
+

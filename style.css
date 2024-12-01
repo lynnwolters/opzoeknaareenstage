@@ -1,0 +1,16 @@
+@import "./css/general-css/reset.css";
+@import "./css/general-css/root.css";
+@import "./css/general-css/typography.css";
+@import "./css/general-css/classes.css";
+
+@import "./css/index-css/nav.css";
+@import "./css/index-css/header.css";
+@import "./css/index-css/intro.css";
+@import "./css/index-css/inleiden.css";
+@import "./css/index-css/info.css";
+@import "./css/index-css/over-mij.css";
+@import "./css/index-css/educatie.css";
+@import "./css/index-css/ervaring.css";
+@import "./css/index-css/vaardigheden.css";
+@import "./css/index-css/afsluiten.css";
+@import "./css/index-css/footer.css";

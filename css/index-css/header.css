@@ -1,0 +1,26 @@
+#header {
+    height: 100vh;
+
+    align-items: end;
+}
+
+#header h1 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+
+    font-family: var(--font-family-regeste-grotesk-regular);
+    font-size: var(--font-size-extra-large);
+    line-height: var(--line-height-85);
+}
+
+#header div {
+    grid-column-start: 9;
+    grid-column-end: 13;
+}
+
+#header div img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
+    border-radius: var(--border-radius-large);
+}

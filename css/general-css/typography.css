@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "RegestoGrotesk-Light";
+    src: url("/font/RegestoGrotesk-Light.eot");
+    src: url("/font/RegestoGrotesk-Light.eot?#iefix") format("embedded-opentype"),
+        url("/font/RegestoGrotesk-Light.woff2") format("woff2"),
+        url("/font/RegestoGrotesk-Light.woff") format("woff"),
+        url("/font/RegestoGrotesk-Light.ttf") format("truetype"),
+        url("/font/RegestoGrotesk-Light.svg#RegestoGrotesk-Light") format("svg");
+}
+
+@font-face {
+    font-family: "RegestoGrotesk-Regular";
+    src: url("/font/RegestoGrotesk-Regular.eot");
+    src: url("/font/RegestoGrotesk-Regular.eot?#iefix") format("embedded-opentype"),
+        url("/font/RegestoGrotesk-Regular.woff2") format("woff2"),
+        url("/font/RegestoGrotesk-Regular.woff") format("woff"),
+        url("/font/RegestoGrotesk-Regular.ttf") format("truetype"),
+        url("/font/RegestoGrotesk-Regular.svg#RegestoGrotesk-Regular") format("svg");
+}
+
+@font-face {
+    font-family: "RegestoGrotesk-Medium";
+    src: url("/font/RegestoGrotesk-Medium.eot");
+    src: url("/font/RegestoGrotesk-Medium.eot?#iefix") format("embedded-opentype"),
+        url("/font/RegestoGrotesk-Medium.woff2") format("woff2"),
+        url("/font/RegestoGrotesk-Medium.woff") format("woff"),
+        url("/font/RegestoGrotesk-Medium.ttf") format("truetype"),
+        url("/font/RegestoGrotesk-Medium.svg#RegestoGrotesk-Medium") format("svg");
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a, button {
+    color: var(--brown);
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+}

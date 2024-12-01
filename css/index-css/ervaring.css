@@ -1,0 +1,112 @@
+#ervaring {
+    height: 100lvh;
+
+    box-shadow: var(--border-top-shadow);
+}
+
+#ervaring ul li button {
+    width: 100%;
+
+    padding: var(--gap);
+    
+    align-items: center;
+
+    border: none;
+    box-shadow: var(--border-top-shadow);
+
+    background-color: transparent;
+
+    transition: all .25s ease-in-out;
+}
+
+#ervaring ul li button:hover {
+    background-color: var(--beige);
+}
+
+#ervaring ul li button:has(+ div[style*="max-height"]):hover {
+    background-color: transparent; 
+}
+
+#ervaring ul li:first-of-type button {
+    box-shadow: 0 0 0 0 var(--brown);
+}
+
+#ervaring ul li:last-of-type button {
+    border-bottom: var(--border);
+}
+
+#ervaring ul li button h2 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+
+    font-family: var(--font-family-regeste-grotesk-regular);
+    font-size: var(--font-size-medium);
+    text-align: left;
+    text-decoration: underline;
+}
+
+#ervaring ul li button h2 span {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#ervaring ul li button h3 {
+    grid-column-start: 8;
+    grid-column-end: 13;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-family: var(--font-family-regeste-grotesk-regular);
+    font-size: var(--font-size-extra-small);
+}
+
+#ervaring ul li button h3 span {
+    padding: .35rem .5rem;
+
+    border: var(--border);
+    border-radius: var(--border-radius-small);
+}
+
+#ervaring ul li > div {
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: max-height .25s ease-in-out;
+}
+
+#ervaring ul li > div a {
+    width: fit-content;
+    height: fit-content;
+
+    grid-column-start: 1;
+    grid-column-end: 8;
+    display: flex;
+    align-items: end;
+
+    margin: 0 var(--gap) var(--gap) var(--gap);
+
+    font-family: var(--font-family-regeste-grotesk-medium);
+    font-size: var(--font-size-extra-small);
+    line-height: var(--line-height-80);
+}
+
+#ervaring ul li > div a div {
+    margin-left: .5rem;
+}
+
+#ervaring ul li > div p {
+    grid-column-start: 8;
+    grid-column-end: 13;
+
+    margin: 0 var(--gap) var(--gap) 0;
+
+    font-family: var(--font-family-regeste-grotesk-regular);
+    font-size: var(--font-size-extra-small);
+    line-height: var(--line-height-135);
+    text-align: justify;
+}
+
+#ervaring ul li > div p span {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

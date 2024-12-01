@@ -1,0 +1,48 @@
+#vaardigheden {
+    height: 100lvh;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-content: start;
+
+    box-shadow: var(--border-top-shadow);
+}
+
+#vaardigheden h3 {
+    width: fit-content;
+    height: 6rem;
+
+    z-index: 1;
+
+    margin-right: var(--gap);
+    margin-bottom: var(--gap);
+    padding: var(--gap);
+
+    border: var(--border);
+    border-radius: var(--border-radius-small);
+
+    font-family: var(--font-family-regeste-grotesk-regular);
+    font-size: var(--font-size-medium);
+    text-align: center;
+}
+
+#vaardigheden div {
+    position: absolute;
+    bottom: -50%;
+    right: -10%;
+}
+
+#vaardigheden div img {
+    width: 100%;
+
+    rotate: -45deg;
+
+    opacity: .8;
+}
+
+
+

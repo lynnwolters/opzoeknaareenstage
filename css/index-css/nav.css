@@ -1,0 +1,35 @@
+#nav {
+    width: 100vw;
+
+    position: absolute;
+    top: 0;
+}
+
+#nav > a {
+    grid-column-start: 1;
+    grid-column-end: 9;
+
+    font-family: var(--font-family-regeste-grotesk-regular);
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-85);
+}
+
+#nav ul {
+    grid-column-start: 9;
+    grid-column-end: 13;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav ul li a {
+    display: flex;
+    align-items: end;
+
+    font-family: var(--font-family-regeste-grotesk-regular);
+    font-size: var(--font-size-extra-small);
+    line-height: var(--line-height-80);
+}
+
+#nav ul li a div {
+    margin-left: .5rem;
+}

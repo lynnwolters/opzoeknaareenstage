@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+html, body {
+    position: relative;
+    
+    background-color: var(--cream);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+

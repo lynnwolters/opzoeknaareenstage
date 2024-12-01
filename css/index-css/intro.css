@@ -1,0 +1,21 @@
+#intro {
+    height: 100lvh;
+
+    box-shadow: var(--border-top-shadow);
+}
+
+#intro h2 {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: var(--font-family-regeste-grotesk-light);
+    font-size: var(--font-size-large);
+    line-height: var(--line-height-90);
+}
+
+#intro h2 span:nth-of-type(2) {
+    text-align: right;
+}

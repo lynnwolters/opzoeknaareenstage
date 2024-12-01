@@ -1,0 +1,23 @@
+#afsluiten {
+    height: 100lvh;
+
+    box-shadow: var(--border-top-shadow);
+}
+
+#afsluiten h2 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+
+    font-family: var(--font-family-regeste-grotesk-light);
+    font-size: var(--font-size-large);
+    line-height: var(--line-height-90);
+}
+
+#afsluiten p {
+    grid-column-start: 9;
+    grid-column-end: 13;
+
+    font-family: var(--font-family-regeste-grotesk-regular);
+    font-size: var(--font-size-extra-small);
+    line-height: var(--line-height-135);
+}

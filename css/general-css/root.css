@@ -1,0 +1,29 @@
+:root {
+    --cream: #F2F1ED;
+    --beige: #D8D3CA;
+    --brown: #34312C;
+    /* --brown: #5b604d; */
+    --pink: #F585CA;
+
+    --gap: 1.5rem;
+
+    --border: .075rem solid #34312C;
+    --border-top-shadow: 0 -.075rem 0 0 var(--brown);
+    --border-radius-large: 1rem;
+    --border-radius-small: .5rem;
+
+    --font-family-regeste-grotesk-light: "RegestoGrotesk-Light";
+    --font-family-regeste-grotesk-regular: "RegestoGrotesk-Regular";
+    --font-family-regeste-grotesk-medium: "RegestoGrotesk-Medium";
+
+    --font-size-extra-small: 1.25rem;
+    --font-size-medium: 2.5rem;
+    --font-size-large: 5.5rem;
+    --font-size-extra-large: 15rem;
+
+    --line-height-75: 75%;
+    --line-height-80: 80%;
+    --line-height-85: 85%;
+    --line-height-90: 90%;
+    --line-height-135: 135%;
+}
