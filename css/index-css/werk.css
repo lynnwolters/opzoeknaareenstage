@@ -1,0 +1,75 @@
+#werk {
+    height: 100lvh;
+
+    box-shadow: var(--border-top-shadow);
+}
+
+#werk ul {
+    height: 100%;
+}
+
+#werk ul li {
+    height: 100%;
+    
+    grid-column: span 4;
+}
+
+#werk ul li a {
+    height: 100%;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+    padding: var(--gap);
+
+    border-right: var(--border);
+
+    background-image: url("/img/playheartio.jpg");
+    background-repeat: no-repeat;
+    background-size: 0%; /* Begin met een miniatuurafbeelding */
+    background-position: center center;
+    transition: background-size 0.5s ease-in-out, background-position 0.5s ease-in-out;
+
+    transition: all .25s ease-in-out;
+}
+
+#werk ul li:nth-of-type(3) a, #werk ul li:nth-of-type(6) a {
+    border-right: none;
+}
+
+#werk ul li:nth-of-type(4) a, #werk ul li:nth-of-type(5) a, #werk ul li:nth-of-type(6) a {
+    border-top: var(--border);
+}
+
+#werk ul li a:hover {
+    background-size: 25%; /* Verander de grootte naar de volledige afbeelding bij hover */
+    background-position: center center;
+}
+
+#werk ul li a:hover .werk-titel {
+    opacity: 0;
+}
+
+#werk ul li a h3 {
+    font-family: var(--font-family-regeste-grotesk-regular);
+    font-size: var(--font-size-medium);
+    text-decoration: underline;
+}
+
+#werk ul li a h4 {
+    position: absolute;
+    top: var(--gap);
+    left: var(--gap);
+
+    padding: .35rem .5rem;
+
+    border: var(--border);
+    border-radius: var(--border-radius-small);
+
+    font-family: var(--font-family-regeste-grotesk-regular);
+    font-size: var(--font-size-extra-small);
+}
