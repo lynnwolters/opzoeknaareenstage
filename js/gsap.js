@@ -37,9 +37,22 @@ gsap.to(inleidenScrollContainer, {
         start: "top top",
         end: "+=200%", 
         scrub: 4,
-        pin: true, 
+        pin: true,
+        onEnter: () => disableScrollSnap(),
+        onLeaveBack: () => enableScrollSnap(),
+        onLeave: () => enableScrollSnap(),
+        onEnterBack: () => disableScrollSnap(),
     }
 });
+
+function disableScrollSnap() {
+    document.documentElement.style.scrollSnapType = "none";
+}
+
+function enableScrollSnap() {
+    document.documentElement.style.scrollSnapType = "y mandatory";
+}
+
 
 infoNavItems[0].classList.add("active");
 
