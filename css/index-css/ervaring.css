@@ -86,7 +86,7 @@
 
     margin: 0 var(--gap) var(--gap) var(--gap);
 
-    font-family: var(--font-family-regeste-grotesk-medium);
+    font-family: var(--font-family-regeste-grotesk-regular);
     font-size: var(--font-size-extra-small);
     line-height: var(--line-height-80);
 }
