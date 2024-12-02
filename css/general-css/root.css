@@ -6,7 +6,7 @@
 
     --gap: 1.5rem;
 
-    --border: .075rem solid #34312C;
+    --border: .075rem solid var(--brown);
     --border-top-shadow: 0 -.075rem 0 0 var(--brown);
     --border-radius-large: 1rem;
     --border-radius-small: .5rem;

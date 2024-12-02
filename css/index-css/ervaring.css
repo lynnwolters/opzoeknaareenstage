@@ -4,6 +4,10 @@
     box-shadow: var(--border-top-shadow);
 }
 
+#ervaring ul li:last-of-type {
+    border-bottom: var(--border);
+}
+
 #ervaring ul li button {
     width: 100%;
 
@@ -29,10 +33,6 @@
 
 #ervaring ul li:first-of-type button {
     box-shadow: 0 0 0 0 var(--brown);
-}
-
-#ervaring ul li:last-of-type button {
-    border-bottom: var(--border);
 }
 
 #ervaring ul li button h2 {

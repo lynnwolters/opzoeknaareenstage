@@ -6,8 +6,15 @@
 
 html, body {
     position: relative;
+
+    scroll-snap-type: y mandatory;
+    overscroll-behavior: none;
     
     background-color: var(--cream);
+}
+
+#header, #intro, #inleiden, #over-mij, #educatie, #ervaring, #vaardigheden, #werk, #afsluiten {
+    scroll-snap-align: start;
 }
 
 li {

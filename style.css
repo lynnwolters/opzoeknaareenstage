@@ -2,6 +2,7 @@
 @import "./css/general-css/root.css";
 @import "./css/general-css/typography.css";
 @import "./css/general-css/classes.css";
+@import "./css/general-css/cursor.css";
 
 @import "./css/index-css/nav.css";
 @import "./css/index-css/header.css";
