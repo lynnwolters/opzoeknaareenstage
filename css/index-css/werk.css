@@ -58,14 +58,16 @@
     border-top: var(--border);
 }
 
-#werk ul li a:hover .werk-titel {
-    opacity: 0;
-}
-
 #werk ul li a h3 {
     font-family: var(--font-family-regeste-grotesk-regular);
     font-size: var(--font-size-medium);
     text-decoration: underline;
+
+    transition: all .25s ease-in-out;
+}
+
+#werk ul li a:hover .werk-titel {
+    scale: 0;
 }
 
 #werk ul li a h4 {
