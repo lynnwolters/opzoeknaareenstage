@@ -21,7 +21,8 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
     trigger: inleiden,
-    start: "top top", 
+    start: "center top", 
+    markers: true,
     onEnter: () => {
         gsap.to("body", { backgroundColor: "#F2F1ED", duration: 0.5 }); 
     },

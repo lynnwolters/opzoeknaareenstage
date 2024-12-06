@@ -17,6 +17,8 @@
 }
 
 #info-nav li {
+    position: relative;
+
     flex: 0 0 auto;
 
     box-shadow: var(--border-top-shadow);

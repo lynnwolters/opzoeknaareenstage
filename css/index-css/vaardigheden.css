@@ -32,14 +32,14 @@
 
 #vaardigheden div {
     position: absolute;
-    bottom: -50%;
-    right: -10%;
+    bottom: -20%;
+    right: -20%;
 }
 
 #vaardigheden div img {
-    width: 100%;
+    width: 80%;
 
-    rotate: -45deg;
+    rotate: -25deg;
 }
 
 
