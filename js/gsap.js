@@ -7,7 +7,7 @@ const overMij =  document.querySelector("#over-mij");
 const infoContentSections = document.querySelectorAll("#info-content section");
 const infoNavItems = document.querySelectorAll("#info-nav li");
 const infoNavLinks = document.querySelectorAll("#info-nav li a");
-const shape = document.querySelector(".shape");
+const shape = document.querySelector("#inleiden div:nth-of-type(2) img");
 
 ScrollTrigger.create({
     trigger: intro,
@@ -54,7 +54,6 @@ function enableScrollSnap() {
     document.documentElement.style.scrollSnapType = "y mandatory";
 }
 
-
 infoNavItems[0].classList.add("active");
 
 infoContentSections.forEach((section, index) => {
@@ -79,44 +78,40 @@ function setActive(index) {
 
 const timeline = gsap.timeline({
     scrollTrigger: {
-    trigger: "#inleiden", 
-    start: "top center", 
-    scrub: true, 
-    pin: false, 
+        trigger: "#inleiden", 
+        start: "top top", 
+        markers: true,
+        scrub: 5, 
     },
 });
 
 timeline
+.fromTo(shape, 
+    { 
+        scale: 0.85, 
+        skewX: 0, 
+        skewY: 0, 
+        transformOrigin: "center",
+    },
+    {
+        scale: 0.75, 
+        skewX: -5, 
+        skewY: -5, 
+        ease: "power1.inOut",
+    }
+)
 .to(shape, {
-    scale: 1.2, 
-    skewX: 5, 
-    skewY: 5, 
-    transformOrigin: "center", 
-    duration: 1,
-    ease: "power1.inOut", 
-})
-.to(shape, {
-    scale: 1.4, 
+    scale: 0.9, 
     skewX: -10, 
     skewY: -10, 
     transformOrigin: "center",
-    duration: 1, 
     ease: "power1.inOut",
 })
 .to(shape, {
-    scale: 1.3, 
+    scale: 0.85, 
     skewX: 0, 
     skewY: 0, 
     transformOrigin: "center",
-    duration: 1, 
-    ease: "power1.inOut",
-})
-.to(shape, {
-    scale: 1, 
-    skewX: 0, 
-    skewY: 0, 
-    transformOrigin: "center",
-    duration: 1, 
     ease: "power1.inOut",
 });
 
