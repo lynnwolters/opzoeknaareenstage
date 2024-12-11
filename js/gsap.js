@@ -7,6 +7,7 @@ const overMij =  document.querySelector("#over-mij");
 const infoContentSections = document.querySelectorAll("#info-content section");
 const infoNavItems = document.querySelectorAll("#info-nav li");
 const infoNavLinks = document.querySelectorAll("#info-nav li a");
+const shape = document.querySelector(".shape");
 
 ScrollTrigger.create({
     trigger: intro,
@@ -22,7 +23,6 @@ ScrollTrigger.create({
 ScrollTrigger.create({
     trigger: inleiden,
     start: "center top", 
-    markers: true,
     onEnter: () => {
         gsap.to("body", { backgroundColor: "#F2F1ED", duration: 0.5 }); 
     },
@@ -76,6 +76,49 @@ function setActive(index) {
     infoNavItems.forEach((item) => item.classList.remove("active"));
     infoNavItems[index].classList.add("active");
 }
+
+const timeline = gsap.timeline({
+    scrollTrigger: {
+    trigger: "#inleiden", 
+    start: "top center", 
+    scrub: true, 
+    pin: false, 
+    },
+});
+
+timeline
+.to(shape, {
+    scale: 1.2, 
+    skewX: 5, 
+    skewY: 5, 
+    transformOrigin: "center", 
+    duration: 1,
+    ease: "power1.inOut", 
+})
+.to(shape, {
+    scale: 1.4, 
+    skewX: -10, 
+    skewY: -10, 
+    transformOrigin: "center",
+    duration: 1, 
+    ease: "power1.inOut",
+})
+.to(shape, {
+    scale: 1.3, 
+    skewX: 0, 
+    skewY: 0, 
+    transformOrigin: "center",
+    duration: 1, 
+    ease: "power1.inOut",
+})
+.to(shape, {
+    scale: 1, 
+    skewX: 0, 
+    skewY: 0, 
+    transformOrigin: "center",
+    duration: 1, 
+    ease: "power1.inOut",
+});
 
 
 
