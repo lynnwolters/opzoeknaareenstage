@@ -1,15 +1,10 @@
 #inleiden {
     height: 100lvh;
 
-    /* position: relative;
-    overflow: hidden; */
+    position: relative;
+    overflow: hidden;
 
     box-shadow: var(--border-top-shadow);
-
-    background-image: url("/img/shape.svg");
-    background-size: 75%;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 #inleiden div:nth-of-type(1) {
@@ -28,66 +23,22 @@
     font-size: var(--font-size-extra-large);
 }
 
-/* #inleiden div:nth-of-type(2) {
+#inleiden div:nth-of-type(2) {
     width: 100%;
+    height: 100%;
 
     position: absolute;
-    left: -10%;
-    bottom: -10%;
+    top: 0;
+    bottom: 0;
     z-index: -1;
 
-    opacity: .15;
-
-    animation: flowerAnimation 10s infinite ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #inleiden div:nth-of-type(2) img {
-    width: 80%;
+    width: 75%;
 }
 
-@keyframes flowerAnimation {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    10% {
-        transform: rotate(1deg);
-    }
-
-    20% {
-        transform: rotate(-1deg);
-    }
-
-    30% {
-        transform: rotate(0deg);
-    }
-
-    40% {
-        transform: rotate(1deg);
-    }
-
-    50% {
-        transform: rotate(0deg);
-    }
-
-    60% {
-        transform: rotate(-1deg);
-    }
-
-    70% {
-        transform: rotate(0deg);
-    }
-
-    80% {
-        transform: rotate(1deg);
-    }
-
-    90% {
-        transform: rotate(-1deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-} */
 
