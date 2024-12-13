@@ -13,6 +13,19 @@
     line-height: var(--line-height-90);
 }
 
+#afsluiten div {
+    grid-column-start: 1;
+    grid-column-end: 9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#afsluiten div img {
+    width: 50%;
+}
+
 #afsluiten p {
     grid-column-start: 9;
     grid-column-end: 13;
