@@ -63,6 +63,7 @@
 
 #werk ul li a:hover::before {
     transform: scale(.75);
+    will-change: transform; 
 }
 
 #werk ul li:nth-of-type(3) a, #werk ul li:nth-of-type(6) a {
