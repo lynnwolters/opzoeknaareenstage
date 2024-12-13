@@ -77,8 +77,6 @@ function setActive(index) {
     infoNavItems[index].classList.add("active");
 }
 
-console.log("Shape transform is:", shape.style.transform);
-
 gsap.timeline({
     scrollTrigger: {
         trigger: "#inleiden",

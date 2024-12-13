@@ -26,3 +26,17 @@
     --line-height-90: 90%;
     --line-height-135: 135%;
 }
+
+@media (max-width: 1000px) {
+    :root {
+        --font-size-extra-large: 8rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --font-size-extra-small: 1rem;
+        --font-size-medium: 2rem;
+        --font-size-extra-large: 12rem;
+    }
+}
