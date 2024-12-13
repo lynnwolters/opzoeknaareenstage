@@ -24,3 +24,14 @@
 
     border-radius: var(--border-radius-large);
 }
+
+@media (max-width: 800px) {
+    #header h1 {
+        display: none;
+    }
+
+    #header div {
+        grid-column-start: 7;
+        grid-column-end: 13;
+    }
+}
