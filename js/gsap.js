@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const header =  document.querySelector("#header");
 const intro =  document.querySelector("#intro");
 const inleiden = document.querySelector("#inleiden");
 const inleidenScrollContainer = document.querySelector("#inleiden div:nth-of-type(1)");
@@ -7,11 +8,11 @@ const overMij =  document.querySelector("#over-mij");
 const infoContentSections = document.querySelectorAll("#info-content section");
 const infoNavItems = document.querySelectorAll("#info-nav li");
 const infoNavLinks = document.querySelectorAll("#info-nav li a");
-// const shape = document.querySelector("#inleiden div:nth-of-type(2) img");
+const shape = document.querySelector("#inleiden div:nth-of-type(2) img");
 
 ScrollTrigger.create({
-    trigger: intro,
-    start: "top center", 
+    trigger: header,
+    start: "center top", 
     onEnter: () => {
         gsap.to("body", { backgroundColor: "#F585CA", duration: 0.5 }); 
     },
@@ -21,7 +22,7 @@ ScrollTrigger.create({
 });
 
 ScrollTrigger.create({
-    trigger: inleiden,
+    trigger: intro,
     start: "center top", 
     onEnter: () => {
         gsap.to("body", { backgroundColor: "#F2F1ED", duration: 0.5 }); 
@@ -76,44 +77,34 @@ function setActive(index) {
     infoNavItems[index].classList.add("active");
 }
 
-// const timeline = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: "#inleiden", 
-//         start: "top top", 
-//         markers: true,
-//         scrub: 5, 
-//     },
-// });
+console.log("Shape transform is:", shape.style.transform);
 
-// timeline
-// .fromTo(shape, 
-//     { 
-//         scale: 0.85, 
-//         skewX: 0, 
-//         skewY: 0, 
-//         transformOrigin: "center",
-//     },
-//     {
-//         scale: 0.75, 
-//         skewX: -5, 
-//         skewY: -5, 
-//         ease: "power1.inOut",
-//     }
-// )
-// .to(shape, {
-//     scale: 0.9, 
-//     skewX: -10, 
-//     skewY: -10, 
-//     transformOrigin: "center",
-//     ease: "power1.inOut",
-// })
-// .to(shape, {
-//     scale: 0.85, 
-//     skewX: 0, 
-//     skewY: 0, 
-//     transformOrigin: "center",
-//     ease: "power1.inOut",
-// });
+gsap.timeline({
+    scrollTrigger: {
+        trigger: "#inleiden",
+        start: "-200px center", 
+        end: "bottom top", 
+        scrub: 6
+    }
+})
+
+.to(shape, {
+    transform: "scale(.85) skewX(0deg) skewY(0deg)", 
+    ease: "power1.inOut"
+})
+.to(shape, {
+    transform: "scale(.95) skewX(-4deg) skewY(-4deg)", 
+    ease: "power1.inOut"
+})
+.to(shape, {
+    transform: "scale(.75) skewX(4deg) skewY(4deg)",
+    ease: "power1.inOut"
+})
+.to(shape, {
+    transform: "scale(.85) skewX(0deg) skewY(0deg)", 
+    ease: "power1.inOut"
+});
+
 
 
 

@@ -37,11 +37,9 @@
     align-items: center;
 }
 
-/* #inleiden div:nth-of-type(2) img {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(0.85) skewX(0) skewY(0);
+#inleiden div:nth-of-type(2) img {
+    transform: scale(0);
     will-change: transform;
-} */
+}
 
 
