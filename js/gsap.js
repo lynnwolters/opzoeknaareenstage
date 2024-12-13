@@ -7,7 +7,7 @@ const overMij =  document.querySelector("#over-mij");
 const infoContentSections = document.querySelectorAll("#info-content section");
 const infoNavItems = document.querySelectorAll("#info-nav li");
 const infoNavLinks = document.querySelectorAll("#info-nav li a");
-const shape = document.querySelector("#inleiden div:nth-of-type(2) img");
+// const shape = document.querySelector("#inleiden div:nth-of-type(2) img");
 
 ScrollTrigger.create({
     trigger: intro,
@@ -76,44 +76,44 @@ function setActive(index) {
     infoNavItems[index].classList.add("active");
 }
 
-const timeline = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#inleiden", 
-        start: "top top", 
-        markers: true,
-        scrub: 5, 
-    },
-});
+// const timeline = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: "#inleiden", 
+//         start: "top top", 
+//         markers: true,
+//         scrub: 5, 
+//     },
+// });
 
-timeline
-.fromTo(shape, 
-    { 
-        scale: 0.85, 
-        skewX: 0, 
-        skewY: 0, 
-        transformOrigin: "center",
-    },
-    {
-        scale: 0.75, 
-        skewX: -5, 
-        skewY: -5, 
-        ease: "power1.inOut",
-    }
-)
-.to(shape, {
-    scale: 0.9, 
-    skewX: -10, 
-    skewY: -10, 
-    transformOrigin: "center",
-    ease: "power1.inOut",
-})
-.to(shape, {
-    scale: 0.85, 
-    skewX: 0, 
-    skewY: 0, 
-    transformOrigin: "center",
-    ease: "power1.inOut",
-});
+// timeline
+// .fromTo(shape, 
+//     { 
+//         scale: 0.85, 
+//         skewX: 0, 
+//         skewY: 0, 
+//         transformOrigin: "center",
+//     },
+//     {
+//         scale: 0.75, 
+//         skewX: -5, 
+//         skewY: -5, 
+//         ease: "power1.inOut",
+//     }
+// )
+// .to(shape, {
+//     scale: 0.9, 
+//     skewX: -10, 
+//     skewY: -10, 
+//     transformOrigin: "center",
+//     ease: "power1.inOut",
+// })
+// .to(shape, {
+//     scale: 0.85, 
+//     skewX: 0, 
+//     skewY: 0, 
+//     transformOrigin: "center",
+//     ease: "power1.inOut",
+// });
 
 
 

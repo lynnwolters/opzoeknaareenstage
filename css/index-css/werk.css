@@ -18,6 +18,7 @@
     height: 100%;
 
     position: relative;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column; 
@@ -28,26 +29,40 @@
 
     border-right: var(--border);
 
-    background-repeat: no-repeat;
-    background-size: 0%; 
-    background-position: center center;
-    transition: background-size 0.5s ease-in-out, background-position 0.5s ease-in-out;
-
     transition: all .25s ease-in-out;
 }
 
-#werk ul li:nth-of-type(1) a {
+#werk ul li a::before{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scale(0);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    transition: transform .25s ease-in-out;
+}
+
+#werk ul li:nth-of-type(1) a::before {
     background-image: url("/img/playheart.io.png");
 }
 
-#werk ul li:nth-of-type(2) a {
+#werk ul li:nth-of-type(2) a::before {
     background-image: url("/img/cssttr.png");
 }
 
 #werk ul li a:hover {
     background-color: var(--beige);
-    background-size: 75%;
-    background-position: center center;
+}
+
+#werk ul li a:hover::before {
+    transform: scale(.75);
 }
 
 #werk ul li:nth-of-type(3) a, #werk ul li:nth-of-type(6) a {
