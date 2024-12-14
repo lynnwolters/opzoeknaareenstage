@@ -59,3 +59,9 @@
 
     border-left: var(--border);
 }
+
+@media (max-width: 900px) {
+    #info-nav li.active .info-nav-link {
+        font-size: var(--font-size-extra-small);
+    } 
+}

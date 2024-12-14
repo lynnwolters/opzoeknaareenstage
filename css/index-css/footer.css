@@ -14,7 +14,7 @@
     line-height: var(--line-height-80);
 }
 
-#footer p span {
+#footer p span:nth-of-type(1) {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
 }
@@ -37,4 +37,14 @@
 
 #footer ul li a div {
     margin-left: .5rem;
+}
+
+@media (max-width: 750px) {
+    #footer p span:nth-of-type(2) {
+        display: none;
+    }
+
+    #footer ul li a div {
+        display: none;
+    }
 }

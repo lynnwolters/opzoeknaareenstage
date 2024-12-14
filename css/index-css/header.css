@@ -31,7 +31,11 @@
     }
 
     #header div {
-        grid-column-start: 7;
+        grid-column-start: 6;
         grid-column-end: 13;
+    }
+
+    #header div img {
+        aspect-ratio: 3/4;
     }
 }

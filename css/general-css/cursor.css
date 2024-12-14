@@ -14,3 +14,9 @@
 .cursor .hover-cursor {
     display: none;
 }
+
+@media (max-width: 750px) {
+    .cursor {
+        display: none;
+    }
+}

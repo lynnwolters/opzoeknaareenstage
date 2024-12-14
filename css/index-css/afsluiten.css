@@ -34,3 +34,19 @@
     font-size: var(--font-size-extra-small);
     line-height: var(--line-height-135);
 }
+
+@media (min-width: 0px) and (max-width: 800px) {
+    #afsluiten div {
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+
+    #afsluiten div img {
+        width: 75%;
+    }
+
+    #afsluiten p {
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+}

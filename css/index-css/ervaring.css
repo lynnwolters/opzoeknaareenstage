@@ -110,3 +110,29 @@
 #ervaring ul li > div p span {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+@media (max-width: 900px) {
+    #ervaring ul li button h2 {
+        grid-column-start: 1;
+        grid-column-end: 13;
+
+        margin-bottom: .75rem;
+    }
+
+    #ervaring ul li button h3 {
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+
+    #ervaring ul li > div a {
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+
+    #ervaring ul li > div p {
+        grid-column-start: 1;
+        grid-column-end: 13;
+
+        margin-left: var(--gap);
+    }
+}
