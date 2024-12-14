@@ -1,5 +1,5 @@
 #header {
-    height: 100lvh;
+    min-height: 100lvh;
 
     align-items: end;
 }
