@@ -9,6 +9,7 @@ const infoContentSections = document.querySelectorAll("#info-content section");
 const infoNavItems = document.querySelectorAll("#info-nav li");
 const infoNavLinks = document.querySelectorAll("#info-nav li a");
 const shape = document.querySelector("#inleiden div:nth-of-type(2) img");
+const contentWidth = inleidenScrollContainer.scrollWidth;
 
 ScrollTrigger.create({
     trigger: header,
@@ -32,12 +33,14 @@ ScrollTrigger.create({
     }
 });
 
+const marginRight = window.innerWidth * 0.6;
+
 gsap.to(inleidenScrollContainer, {
-    x: "-100vw",
+    x: `-${contentWidth - marginRight}px`, 
     scrollTrigger: {
         trigger: inleiden,
         start: "top top",
-        end: "+=200%", 
+        end: () => `+=${contentWidth + window.innerWidth - marginRight}`, 
         scrub: 4,
         pin: true,
         onEnter: () => disableScrollSnap(),

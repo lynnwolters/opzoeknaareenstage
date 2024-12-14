@@ -27,16 +27,26 @@
     --line-height-135: 135%;
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 0px) and (max-width: 800px) {
     :root {
-        --font-size-extra-large: 7rem;
+        --font-size-large: 4rem;
     }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 800px) and (max-width: 1000px) {
     :root {
-        --font-size-extra-small: 1rem;
-        --font-size-medium: 2rem;
+        --font-size-large: 4.5rem;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    :root {
+        --font-size-large: 5rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1200px) {
+    :root {
         --font-size-extra-large: 12rem;
     }
 }
