@@ -100,11 +100,7 @@
     font-size: var(--font-size-extra-small);
 }
 
-@media (max-width: 900px) {
-    #werk {
-        height: fit-content;
-    }
-
+@media (min-width: 0px) and (max-width: 500px) {
     #werk ul li {
         height: 50lvh;
         
