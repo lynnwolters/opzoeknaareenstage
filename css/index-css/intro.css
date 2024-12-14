@@ -24,4 +24,8 @@
     #intro {
         box-shadow: none;
     }
+
+    #intro h2 {
+        text-align: justify;
+    }
 }
