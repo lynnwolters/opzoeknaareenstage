@@ -44,7 +44,7 @@
     margin-left: .5rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 500px) {
     #nav > a span:nth-of-type(2)::before {
         content: ""; 
         display: block;
