@@ -33,18 +33,13 @@
         --gap: 1rem;
 
         --font-size-medium: 2rem;
+        --font-size-large: 3rem;
     }
 }
 
 @media (min-width: 0px) and (max-width: 500px) {
     :root {
         --font-size-extra-small: .9rem;
-    }
-}
-
-@media (min-width: 0px) and (max-width: 800px) {
-    :root {
-        --font-size-large: 3rem;
     }
 }
 
