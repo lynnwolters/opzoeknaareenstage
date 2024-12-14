@@ -21,10 +21,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 panel.style.maxHeight = panel.scrollHeight + "px";
             }
 
-            // Pas de hoogte van de sectie aan op basis van de inhoud
+            // Pas de hoogte van de sectie aan
             setTimeout(() => {
-                section.style.height = Math.max(section.scrollHeight, window.innerHeight) + "px";
-            }, 300); // Wacht tot de animatie klaar is
+                const isPanelOpen = [...accordion].some((button) => {
+                    const panel = button.nextElementSibling;
+                    return panel.style.maxHeight;
+                });
+
+                // Zet de hoogte op 'fit-content' als een paneel open is, anders terug naar '100vh'
+                section.style.height = isPanelOpen ? "fit-content" : "100vh";
+            }, 300); // Wacht tot de paneltransitie klaar is
         });
     }
 });
