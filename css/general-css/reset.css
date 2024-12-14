@@ -35,4 +35,14 @@ button {
     cursor: pointer;
 }
 
+@media (min-width: 0px) and (max-width: 500px) {
+    html, body {
+        scroll-snap-type: none;
+    }
+
+    #header, #intro, #inleiden, #over-mij, #educatie, #ervaring, #vaardigheden, #werk, #afsluiten {
+        scroll-snap-align: none;
+    }
+}
+
 
