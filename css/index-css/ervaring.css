@@ -111,7 +111,13 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 500px) {
+    #ervaring {
+        min-height: 100lvh;
+    
+        box-shadow: var(--border-top-shadow);
+    }
+
     #ervaring ul li button h2 {
         grid-column-start: 1;
         grid-column-end: 13;
