@@ -87,8 +87,9 @@
     #nav ul.toggle-mobile-menu {
         grid-column-start: 9;
         grid-column-end: 13;
-        display: block;
-        justify-self: end;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
     }
 
     #nav ul li {
