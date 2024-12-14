@@ -3,9 +3,10 @@ window.addEventListener("load", () => {
     const overlay = document.querySelector("#overlay");
 
     function checkScreenWidth() {
-        if (window.innerWidth < 900) {
+        const overlay = document.querySelector("#overlay");
+        if (window.innerWidth < 900 && !overlay.classList.contains("overlay-active")) {
             overlay.classList.add("overlay-active");
-        } else {
+        } else if (window.innerWidth >= 900 && overlay.classList.contains("overlay-active")) {
             overlay.classList.remove("overlay-active");
         }
     }
