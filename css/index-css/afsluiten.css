@@ -35,7 +35,11 @@
     line-height: var(--line-height-135);
 }
 
-@media (min-width: 0px) and (max-width: 800px) {
+@media (min-width: 0px) and (max-width: 500px) {
+    #afsluiten {
+        height: fit-content;
+    }
+
     #afsluiten div {
         grid-column-start: 1;
         grid-column-end: 13;
