@@ -3,6 +3,8 @@
 
     position: relative;
     overflow: hidden;
+
+    box-shadow: var(--border-top-shadow);
 }
 
 #inleiden div:nth-of-type(1) {
@@ -39,6 +41,12 @@
 #inleiden div:nth-of-type(2) img {
     transform: scale(0);
     will-change: transform;
+}
+
+@media (max-width: 500px) {
+    #inleiden {
+        box-shadow: var(--border-bottom-shadow);
+    }
 }
 
 @media (min-width: 0px) and (max-width: 750px) {

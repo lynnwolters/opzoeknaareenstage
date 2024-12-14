@@ -3,7 +3,7 @@
 
     align-items: end;
 
-    box-shadow: var(--border-bottom-shadow);
+    box-shadow: none;
 }
 
 #header h1 {
@@ -25,6 +25,12 @@
     object-fit: cover;
 
     border-radius: var(--border-radius-large);
+}
+
+@media (max-width: 500px) {
+    #header {
+        box-shadow: var(--border-bottom-shadow);
+    }
 }
 
 @media (max-width: 900px) {
