@@ -101,6 +101,10 @@
 }
 
 @media (min-width: 0px) and (max-width: 500px) {
+    #werk {
+        height: fit-content;
+    }
+
     #werk ul li {
         height: 50lvh;
         
