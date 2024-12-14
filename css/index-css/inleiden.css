@@ -43,10 +43,4 @@
     will-change: transform;
 }
 
-@media (min-width: 0px) and (max-width: 750px) {
-    #inleiden div:nth-of-type(2) {
-        rotate: 90deg;
-    }
-}
-
 
