@@ -60,8 +60,8 @@
     border-left: var(--border);
 }
 
-@media (max-width: 900px) {
-    #info-nav li.active .info-nav-link {
-        font-size: var(--font-size-extra-small);
-    } 
+@media (min-width: 0px) and (max-width: 500px) {
+    #info-nav {
+        display: none;
+    }
 }
