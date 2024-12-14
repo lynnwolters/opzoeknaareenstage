@@ -26,6 +26,10 @@
 }
 
 @media (max-width: 900px) {
+    #header {
+        min-height: fit-content;
+    }
+
     #header h1 {
         display: none;
     }
