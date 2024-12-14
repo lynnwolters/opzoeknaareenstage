@@ -41,5 +41,11 @@
     rotate: -25deg;
 }
 
+@media (min-width: 0px) and (max-width: 500px) {
+    #vaardigheden h3 {
+        padding: calc(var(--gap) / 2);
+    }
+}
+
 
 
