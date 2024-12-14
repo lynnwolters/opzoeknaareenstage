@@ -19,3 +19,11 @@
 #intro h2 span:nth-of-type(2) {
     text-align: right;
 }
+
+@media (max-width: 500px) {
+    #intro {
+        height: calc(100lvh - 2px);
+
+        box-shadow: var(--border-top-shadow);
+    }
+}
