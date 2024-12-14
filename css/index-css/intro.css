@@ -19,3 +19,9 @@
 #intro h2 span:nth-of-type(2) {
     text-align: right;
 }
+
+@media (max-width: 500px) {
+    #intro {
+        box-shadow: none;
+    }
+}
