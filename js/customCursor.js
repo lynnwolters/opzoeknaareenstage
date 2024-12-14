@@ -1,4 +1,4 @@
-const cursor = document.querySelector(".cursor");
+const cursor = document.querySelector("#cursor");
 const triggerCursor = document.querySelectorAll(".trigger-cursor");
 const defaultCursorImg = document.querySelector(".default-cursor");
 const hoverCursorImg = document.querySelector(".hover-cursor");

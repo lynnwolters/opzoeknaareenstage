@@ -1,4 +1,4 @@
-.cursor {
+#cursor {
     width: 2.5rem;
 
     position: fixed;
@@ -11,12 +11,12 @@
     pointer-events: none;
 }
 
-.cursor .hover-cursor {
+#cursor .hover-cursor {
     display: none;
 }
 
 @media (max-width: 750px) {
-    .cursor {
+    #cursor {
         display: none;
     }
 }

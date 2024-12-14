@@ -17,7 +17,13 @@
 </head>
 <body>
 
-    <div class="cursor">
+    <div id="overlay" class="spacing-around">
+        <h2>Niet geoptimaliseerd voor mobiel</h2>
+        <p>Deze site is nog niet volledig geoptimaliseerd voor mobiele apparaten. U kunt doorgaan op eigen risico.</p>
+        <button>Ga door</button>
+    </div>    
+
+    <div id="cursor">
         <img src="./img/cartoon-hand-closed.svg" alt="Cartoon hand closed vector." class="default-cursor">
         <img src="./img/cartoon-hand-open.svg" alt="Cartoon hand open vector." class="hover-cursor" style="display: none;">
     </div>
@@ -266,7 +272,7 @@
     </main>
 
     <footer id="footer" class="grid spacing-around">
-        <p><span>©</span><span>Copyright</span> Lynn Wolters 2024</p>
+        <p><span>©</span> <span>Copyright</span> Lynn Wolters 2024</p>
         <ul>
             <li>
                 <a class="link trigger-cursor" href="mailto:lynn.wolters27@gmail.com" target="_blank">
@@ -293,6 +299,7 @@
     <script src="./js/textEffect.js"></script>
     <script src="./js/customCursor.js"></script>
     <script src="./js/mobileMenu.js"></script>
+    <script src="./js/overlay.js"></script>
 
 </body>
 </html>

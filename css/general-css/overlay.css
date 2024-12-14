@@ -1,0 +1,59 @@
+#overlay {
+    display: none;
+}
+
+#overlay.overlay-active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--cream);
+}
+
+#overlay.overlay-active h2 {
+    width: 80%;
+
+    margin-bottom: 2rem;
+
+    font-family: var(--font-family-regeste-grotesk-light);
+    font-size: var(--font-size-large);
+    line-height: var(--line-height-90);
+    text-align: center;
+}
+
+#overlay.overlay-active p {
+    width: 80%;
+
+    margin-bottom: 2rem;
+
+    font-family: var(--font-family-regeste-grotesk-regular);
+    font-size: var(--font-size-extra-small);
+    line-height: var(--line-height-135);
+    text-align: center;
+}
+
+#overlay.overlay-active button {
+    padding: .35rem .5rem;
+
+    border: var(--border);
+    border-radius: var(--border-radius-small);
+
+    background-color: var(--cream);
+
+    font-family: var(--font-family-regeste-grotesk-regular);
+    font-size: var(--font-size-extra-small);
+
+    transition: all .25s ease-in-out;
+}
+
+#overlay.overlay-active button:hover {
+    background-color: var(--beige);
+}
