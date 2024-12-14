@@ -27,11 +27,11 @@
     --line-height-135: 135%;
 }
 
-@media (min-width: 0px) and (max-width: 900px) {
+@media (min-width: 0px) and (max-width: 500px) {
     :root {
         --gap: 1rem;
 
-        --font-size-medium: 1.5rem;
+        --font-size-medium: 2rem;
     }
 }
 
