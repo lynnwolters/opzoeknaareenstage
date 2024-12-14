@@ -68,5 +68,7 @@
     #info-content {
         grid-column-start: 1;
         grid-column-end: 13;
+
+        border-left: none;
     }
 }
