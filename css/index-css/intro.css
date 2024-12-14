@@ -1,5 +1,7 @@
 #intro {
     height: 100lvh;
+
+    box-shadow: var(--border-bottom-shadow);
 }
 
 #intro h2 {
