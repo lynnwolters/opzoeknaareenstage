@@ -1,5 +1,5 @@
 #ervaring {
-    height: 100lvh;
+    min-height: 100vh;
     height: auto;
 
     box-shadow: var(--border-top-shadow);
