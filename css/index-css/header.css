@@ -26,10 +26,6 @@
 }
 
 @media (max-width: 900px) {
-    #header {
-        min-height: fit-content;
-    }
-
     #header h1 {
         display: none;
     }
@@ -41,5 +37,11 @@
 
     #header div img {
         aspect-ratio: 3/4;
+    }
+}
+
+@media (orientation: landscape) {
+    #header {
+        min-height: fit-content;
     }
 }
