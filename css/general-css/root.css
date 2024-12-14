@@ -8,6 +8,7 @@
 
     --border: .075rem solid var(--brown);
     --border-top-shadow: 0 -.075rem 0 0 var(--brown);
+    --border-bottom-shadow: 0 .075rem 0 0 var(--brown);
     --border-radius-large: 1rem;
     --border-radius-small: .5rem;
 

@@ -2,6 +2,8 @@
     min-height: 100svh;
 
     align-items: end;
+
+    box-shadow: var(--border-bottom-shadow);
 }
 
 #header h1 {
