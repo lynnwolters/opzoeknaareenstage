@@ -1,5 +1,5 @@
 #header {
-    min-height: 100lvh;
+    min-height: 100svh;
 
     align-items: end;
 }
@@ -37,11 +37,5 @@
 
     #header div img {
         aspect-ratio: 3/4;
-    }
-}
-
-@media (orientation: landscape) {
-    #header {
-        min-height: fit-content;
     }
 }
