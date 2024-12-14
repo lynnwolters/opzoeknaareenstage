@@ -40,11 +40,13 @@
         height: fit-content;
     }
 
+    #afsluiten h2 {
+        margin-bottom: 2rem;
+    }
+
     #afsluiten div {
         grid-column-start: 1;
         grid-column-end: 13;
-
-        margin-top: 2rem;
     }
 
     #afsluiten div img {
@@ -54,5 +56,7 @@
     #afsluiten p {
         grid-column-start: 1;
         grid-column-end: 13;
+
+        margin-bottom: 4rem;
     }
 }
