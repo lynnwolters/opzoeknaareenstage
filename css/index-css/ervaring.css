@@ -113,7 +113,7 @@
 
 @media (max-width: 500px) {
     #ervaring {
-        min-height: 100lvh;
+        height: fit-content;
     
         box-shadow: var(--border-top-shadow);
     }
