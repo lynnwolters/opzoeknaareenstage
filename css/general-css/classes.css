@@ -14,3 +14,8 @@
 .link:hover .arrow {
     transform: translate(20%, -20%);
 }
+
+/* .content-fade-in {
+    opacity: 0;
+    transform: translateY(20px); 
+} */

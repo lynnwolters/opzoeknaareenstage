@@ -1,8 +1,14 @@
-window.addEventListener('load', () => {
-    const overlay = document.getElementById('loading-overlay');
+window.addEventListener("load", () => {
+    const loadingScreen = document.querySelector("#loading-screen");
+    const percentageText = document.querySelector("#loading-screen h2");
+    let percentage = 0;
 
-    // Automatically remove overlay after the fade-out animation
-    overlay.addEventListener('animationend', () => {
-        overlay.style.display = 'none'; // Remove overlay from view
-    });
+    const interval = setInterval(() => {
+        percentage++;
+        percentageText.textContent = `${percentage}%`;
+
+        if (percentage === 100) {
+            clearInterval(interval);
+        }
+    }, 20); 
 });
