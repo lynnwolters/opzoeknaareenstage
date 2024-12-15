@@ -57,3 +57,29 @@
         grid-column-end: 13;
     }
 }
+
+#header h1,
+#header div {
+    transform: translateY(100px);
+
+    opacity: 0;
+}
+
+#header.slide-in h1,
+#header.slide-in div {
+    animation: slideIn .75s ease-in-out forwards;
+    animation-delay: .75s;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(100px);
+
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+
+        opacity: 1;
+    }
+}

@@ -132,3 +132,29 @@
     }
 }
 
+#nav.slide-in > a,
+#nav.slide-in ul li {
+    transform: translateY(100px);
+
+    opacity: 0;
+}
+
+#nav.slide-in > a,
+#nav.slide-in ul li {
+    animation: slideIn .75s ease-in-out forwards;
+    animation-delay: .5s;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(100px);
+
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+
+        opacity: 1;
+    }
+}
+
