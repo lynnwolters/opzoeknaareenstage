@@ -1,4 +1,4 @@
-/* #overlay {
+#overlay {
     display: none;
 }
 
@@ -56,4 +56,4 @@
 
 #overlay.overlay-active button:hover {
     background-color: var(--beige);
-} */
+}
