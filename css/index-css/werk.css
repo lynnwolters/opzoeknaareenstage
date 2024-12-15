@@ -100,7 +100,7 @@
     font-size: var(--font-size-extra-small);
 }
 
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 900px) {
     #werk ul li {
         grid-column: span 6;
     }

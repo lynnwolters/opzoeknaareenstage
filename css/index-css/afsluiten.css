@@ -35,7 +35,7 @@
     line-height: var(--line-height-135);
 }
 
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 750px) {
     #afsluiten {
         height: fit-content;
     }
