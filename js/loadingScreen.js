@@ -11,10 +11,10 @@ window.addEventListener("load", () => {
         if (percentage === 100) {
             clearInterval(interval);
             
-            loadingScreen.addEventListener("animationstart", () => {
-                nav.classList.add("slide-in");
-                header.classList.add("slide-in");
-            });
+            // loadingScreen.addEventListener("animationstart", () => {
+            //     nav.classList.add("slide-in");
+            //     header.classList.add("slide-in");
+            // });
         }
     }, 20);
 });

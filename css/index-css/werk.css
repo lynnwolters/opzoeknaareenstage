@@ -32,7 +32,7 @@
     transition: all .25s ease-in-out;
 }
 
-#werk ul li a::before{
+#werk ul li a::before {
     content: "";
 
     position: absolute;

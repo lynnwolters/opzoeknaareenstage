@@ -132,7 +132,7 @@
     }
 }
 
-#nav.slide-in > a,
+/* #nav.slide-in > a,
 #nav.slide-in ul li {
     transform: translateY(100px);
 
@@ -156,5 +156,5 @@
 
         opacity: 1;
     }
-}
+} */
 
