@@ -39,7 +39,7 @@
 }
 
 #inleiden div:nth-of-type(2) img {
-    transform: scale(0);
+    transform: scale(.85);
     will-change: transform;
 }
 
