@@ -57,6 +57,22 @@
     background-image: url("/img/cssttr.png");
 }
 
+#werk ul li:nth-of-type(3) a::before {
+    background-image: url("/img/tol.png");
+}
+
+#werk ul li:nth-of-type(4) a::before {
+    background-image: url("/img/swapfiets.png");
+}
+
+#werk ul li:nth-of-type(5) a::before {
+    background-image: url("/img/de-man-met-de-hamer.png");
+}
+
+#werk ul li:nth-of-type(6) a::before {
+    background-image: url("/img/illustration-wheel.png");
+}
+
 #werk ul li a:hover {
     background-color: var(--beige);
 }
@@ -78,6 +94,7 @@
     font-family: var(--font-family-regeste-grotesk-regular);
     font-size: var(--font-size-medium);
     text-decoration: underline;
+    text-align: center;
 
     transition: all .25s ease-in-out;
 }
