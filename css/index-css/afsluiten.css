@@ -60,3 +60,9 @@
         margin-bottom: 4rem;
     }
 }
+
+@media (min-width: 1600px) {
+    #afsluiten div img {
+        width: 40%;
+    }
+}
