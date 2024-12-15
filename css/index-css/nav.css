@@ -142,7 +142,7 @@
 #nav.slide-in > a,
 #nav.slide-in ul li {
     animation: slideIn .75s ease-in-out forwards;
-    animation-delay: .5s;
+    animation-delay: .35s;
 }
 
 @keyframes slideIn {

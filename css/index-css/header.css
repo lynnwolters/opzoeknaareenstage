@@ -68,7 +68,7 @@
 #header.slide-in h1,
 #header.slide-in div {
     animation: slideIn .75s ease-in-out forwards;
-    animation-delay: .5s;
+    animation-delay: .35s;
 }
 
 @keyframes slideIn {
