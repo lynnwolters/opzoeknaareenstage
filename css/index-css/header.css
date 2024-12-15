@@ -27,7 +27,7 @@
     border-radius: var(--border-radius-large);
 }
 
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 750px) {
     #header {
         box-shadow: var(--border-bottom-shadow);
     }
@@ -43,5 +43,17 @@
 
     #header div img {
         aspect-ratio: 3/4;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1200px) {
+    #header h1 {
+        grid-column-start: 1;
+        grid-column-end: 8;
+    }
+
+    #header div {
+        grid-column-start: 8;
+        grid-column-end: 13;
     }
 }

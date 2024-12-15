@@ -23,7 +23,7 @@
     align-self: flex-end;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 500px) {
     #over-mij p:nth-of-type(1) {
         grid-column-start: 1;
         grid-column-end: 11;

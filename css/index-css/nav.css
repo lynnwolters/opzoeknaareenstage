@@ -44,7 +44,7 @@
     margin-left: .5rem;
 }
 
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 750px) {
     #nav > a span:nth-of-type(2)::before {
         content: ""; 
         display: block;
@@ -113,6 +113,22 @@
 
     #nav ul li a div {
         display: none;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1200px) {
+    #nav > a {
+        grid-column-start: 1;
+        grid-column-end: 8;
+    }
+
+    #nav ul {
+        grid-column-start: 8;
+        grid-column-end: 13;
+    }
+
+    #nav ul li a div img {
+        width: 90%;
     }
 }
 

@@ -32,9 +32,25 @@
     :root {
         --gap: 1rem;
 
-        --font-size-extra-small: 1.1rem;
-        --font-size-medium: 2rem;
         --font-size-large: 3.25rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 900px) {
+    :root {
+        --font-size-medium: 2rem;
+        --font-size-extra-large: 10rem;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    :root {
         --font-size-extra-large: 12rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1200px) {
+    :root {
+        --font-size-extra-small: 1.1rem;
     }
 }
