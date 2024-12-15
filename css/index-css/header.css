@@ -60,7 +60,7 @@
 
 #header h1,
 #header div {
-    transform: translateY(100px);
+    transform: translateY(200px);
 
     opacity: 0;
 }
@@ -68,12 +68,12 @@
 #header.slide-in h1,
 #header.slide-in div {
     animation: slideIn .75s ease-in-out forwards;
-    animation-delay: .75s;
+    animation-delay: .5s;
 }
 
 @keyframes slideIn {
     0% {
-        transform: translateY(100px);
+        transform: translateY(200px);
 
         opacity: 0;
     }
