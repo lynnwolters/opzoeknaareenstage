@@ -4,6 +4,7 @@
 @import "./css/general-css/classes.css";
 @import "./css/general-css/cursor.css";
 @import "./css/general-css/overlay.css";
+@import "./css/general-css/loading-screen.css";
 
 @import "./css/index-css/nav.css";
 @import "./css/index-css/header.css";
