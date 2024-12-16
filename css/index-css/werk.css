@@ -78,8 +78,17 @@
 }
 
 #werk ul li a:hover::before {
-    transform: scale(.75);
+    animation: hoverGrow .25s ease-in-out forwards;
     will-change: transform; 
+}
+
+@keyframes hoverGrow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(0.75);
+    }
 }
 
 #werk ul li:nth-of-type(3) a, #werk ul li:nth-of-type(6) a {
